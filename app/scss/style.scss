@@ -1,0 +1,33 @@
+.svg-Vector_5-dims { width: 31px; height: 59px; }
+.svg-brush-dims { width: 23px; height: 23px; }
+.svg-bulb-dims { width: 24px; height: 36px; }
+.svg-file-dims { width: 23px; height: 30px; }
+.svg-house-dims { width: 23px; height: 23px; }
+.svg-pipe-dims { width: 23px; height: 34px; }
+.svg-tel-dims { width: 30px; height: 30px; }
+
+._container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 5px;
+}
+
+body {
+   display: flex;
+   overflow-x: hidden;
+   flex-direction: column;
+}
+
+main {
+   flex: 1 1 100%;
+}
+
+.image {
+   width: 100%;
+}
+.disabled {
+   display: none;
+}
+body.lock {
+   overflow: hidden;
+}

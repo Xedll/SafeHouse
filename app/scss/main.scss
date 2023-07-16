@@ -1,0 +1,125 @@
+.main {
+   background: #0A0A0A;
+
+   padding-top: 72px;
+   padding-bottom: 150px;
+   &__container {
+      display: flex;
+      align-items: center;
+   }
+
+   &__content {
+      max-width: 60%;
+      margin-right: 36px;
+   }
+
+   &__title {
+      color: var(--unnamed, #FFF);
+
+/* Heading/One */
+font-family: Roboto;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+margin-bottom: 73px;
+line-height: normal;
+   }
+
+   &__subtitle {
+      color: #FFF;
+      max-width: 50%;
+margin-bottom: 83px;
+/* Heading/Three */
+font-family: Montserrat;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+font-variant: small-caps;
+   }
+
+   &__button {
+      color: var(--unnamed, #FFF);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.8px;
+display: inline-block;
+padding:14px 36px;
+border-radius: 10px;
+border: 3px solid #FF7A00;
+background: var(--unnamed, #1C1D1E);
+   }
+
+   &__slider {
+      position: relative;
+      z-index: 2;
+      width: 640px;
+      height: 440px;
+      overflow: hidden;
+   }
+
+   &__sliderLine {
+      position: absolute;
+      transition: all 1s;
+      top: 0;
+      left: 0;
+      display: flex;
+   }
+
+   &__sliderItem {
+   }
+   &__sliderButtons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 610px;
+      height: 100%;
+      margin: 0 15px;
+      &>*{
+         background: rgba($color: #000000, $alpha: 0);
+      }
+   }
+   &__sliderNext{
+      position: absolute;
+      transform: rotate(180deg);
+      top: 50%;
+      right: 0;
+   }
+   &__sliderPrev{
+      position: absolute;
+      top: 50%;
+      left: 0;
+   }
+   &__sliderDots{
+      position: absolute;
+      width:fit-content;
+      left:calc(100%);
+      bottom: 13px;
+      left: 0;
+      display: flex;
+      &>*:not(:last-child) {
+         margin-right: 20px;
+      }
+   }  
+   &__sliderDot{
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #fff;
+      &.selected {
+         background: #FF7A00;
+      }
+   }
+   &__bg {
+      position:absolute;
+      height: 520px;
+      width:50%;
+      top: 177px;
+      right: -50px;
+      border: 10px solid var(--unnamed, #FF7A00);
+      background: rgba(196, 196, 196, 0.00);
+   }
+}

@@ -1,0 +1,115 @@
+.about {
+   padding: 35px 0 90px 0;
+   position: relative;
+   &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: url(../images/about-bg.avif) center/cover no-repeat;
+      filter: brightness(.15);
+      z-index: -2;
+   }
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__content {
+      max-width: 40%;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__title {
+      color: var(--unnamed, #FF7A00);
+      font-family: Montserrat;
+      font-size: 70px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 3.5px;
+      text-align: center;
+      margin-bottom: 50px;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      &>*:not(:last-child) {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__item {
+      color: var(--unnamed, #FFF);
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1px;
+      &::after{
+         content:'';
+         width: 100%;
+         height: 2px;
+         background: var(--unnamed, #FF7D05);
+         display: block;
+         margin-top: 15px;
+      }
+   }
+
+   &__bubble {
+      position: relative;      
+      width: 320px;
+      height: 320px;
+      overflow: hidden;
+   }
+   &__bubbleLine {
+      transition: all 1s;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: grid;
+      grid-template-columns: repeat(3,1fr );
+   }
+
+   &__bubbleItem {
+      border-radius: 50%;
+      border: 3px solid var(--unnamed, #FF7A00);
+      background: rgba(196, 196, 196, 0.00);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 320px;
+      height: 320px;
+      margin-right: 15%;
+      &>*:not(:last-child) {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__textTwo {
+      color: var(--unnamed, #FF7A00);
+      font-family: Montserrat;
+      font-size: 100px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 5px;
+   }
+   &__textOne, &__textThree{
+      color: var(--unnamed, #FFF);
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.9px;
+   }
+}
